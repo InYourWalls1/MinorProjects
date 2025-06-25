@@ -8,7 +8,6 @@ import random
 import asyncio
 import subprocess
 import time
-import tempfile
 
 #discord bot intents (intent's an object which basically stores the configurations)
 
