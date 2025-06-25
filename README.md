@@ -1,1 +1,3 @@
-So, basically these are not the whole projects, they lack the wrapping (especially regarding python files), though i can't add them they should be fairly simple to reproduce, as they are simple batch files and virtual envs
+Repository containing several minor projects including:
+- discord bots
+- small dice program (runs on terminal)
