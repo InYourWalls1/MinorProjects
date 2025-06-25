@@ -269,7 +269,7 @@ async def on_message(message):
         or ("supplico" in message.content and "guida" in message.content)
         or ("anelo" in message.content and "guida" in message.content)
         or ("cerco" in message.content and "guida" in message.content)
-        or ("bisogno" in message.content and "guida" in message.content)
+        or ("bisogno" in message.content and "guida" in message.content) #wait this shit is useless with line 274
         or ("aiuta" in message.content)
         or ("guida" in message.content)):
             await message.channel.send(randAnswer())
