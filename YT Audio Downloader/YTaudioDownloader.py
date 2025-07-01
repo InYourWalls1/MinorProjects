@@ -1,5 +1,17 @@
 import os
 
+if os.path.isfile('new.flag'):
+    print("First time using the program!")
+    startChoice = input("Would you like to download yt dlp? (required for the program to run) (Y/N)")
+    while (startChoice.lower() != y or startChoice.lower() != n):
+        os.system('cls')
+        startChoice = input("Would you like to download yt dlp? (required for the program to run) (Y/N)")
+    if startChoice.lower() == y:
+        os.system('python -m ensurepip --upgrade')
+        os.system('pip install yt-dlp')
+    print("Setup done! You may now use the program")
+    os.system('del new.flag')
+    
 VIDEO_URL = input("Input video URL:")
 
 index = VIDEO_URL.find('&') #truncating the url when it reaches '&' in case the user is stupid ass and puts the link as part of a playlist
@@ -23,5 +35,5 @@ try:
     os.system(f"yt-dlp -x --audio-format {specifiedFormat} -o \"%(title)s.%(ext)s\" {VIDEO_URL}")
     print("All Done!")
 except:
-    print("Stupid ass program... can't even do anything right (smth went wrong)")
+    print("Something went wrong, ensure yt-dlp is installed correctly")
 os.system('pause')
