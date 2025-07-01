@@ -7,3 +7,4 @@ Requirements:
   * pip install yt-dlp
   * if it doesn't recognize pip as a command even though you installed python, try the following
   *  python -m ensurepip --upgrade
+  *  after that, re-try "pip install yt-dlp"
